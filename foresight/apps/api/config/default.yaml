@@ -1,0 +1,36 @@
+api:
+  # Do not use trailing spaces for the baseUrl
+  baseUrl: http://127.0.0.1:3000
+  host: 127.0.0.1
+  port: 3000
+  version: api/v1
+
+admin:
+  url: http://127.0.0.1:9000
+  recoverPath: /#/password-reset
+
+colmena:
+  modules:
+    '@colmena/module-api-content': true
+    '@colmena/module-api-core': true
+    '@colmena/module-api-storage': true
+    '@colmena/module-api-system': true
+
+hideBootWarning: false
+
+mongodb:
+  url: false
+
+settings:
+  registrationEnabled: true
+
+smtp:
+  host: false
+  port: false
+
+storage:
+  path: './storage'
+
+system:
+  initdb: false
+  migratedb: false

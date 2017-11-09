@@ -1,0 +1,25 @@
+
+<div class="mb-2">
+  <ui-data-grid-header
+    (action)="gridAction($event)"
+    [config]="config?.header"
+    [columns]="columns"
+    [limit]="limit">
+  </ui-data-grid-header>
+</div>
+<div class="mt-1">
+  <ui-data-grid-rows
+    (action)="gridAction($event)"
+    [columns]="columns"
+    [columnSorting]="columnSorting"
+    [items]="items">
+  </ui-data-grid-rows>
+</div>
+<div style="text-align: center" *ngIf="items?.length">
+  <ui-data-grid-pager
+    (action)="gridAction($event)"
+    [itemsPerPage]="limit"
+    [currentPage]="currentPage"
+    [totalItems]="totalItems">
+  </ui-data-grid-pager>
+</div>

@@ -1,0 +1,39 @@
+{
+  "name": "StorageFile",
+  "description": "Storage: Manage Files in a Domain",
+  "base": "SystemBaseModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "SystemDomain": {
+      "foreignKey": "container",
+      "required": false
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "created": {
+      "type": "Date",
+      "defaultFn": "now"
+    },
+    "modified": {
+      "type": "Date",
+      "defaultFn": "now"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

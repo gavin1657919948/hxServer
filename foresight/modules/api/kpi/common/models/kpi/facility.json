@@ -1,0 +1,49 @@
+{
+    "name": "facility",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "properties": {
+      "facilityId": {
+        "type": "string",
+        "required": false
+      },
+      "nox": {
+        "type": "string",
+        "required": false
+      },
+      "sox": {
+        "type": "string",
+        "required": false
+      },
+      "co": {
+        "type": "string",
+        "required": false
+      },
+      "tpm": {
+        "type": "string",
+        "required": false
+      },
+      "pm2_5": {
+        "type": "string",
+        "required": false
+      },
+      "pm10": {
+        "type": "string",
+        "required": false
+      },
+      "ftpm": {
+        "type": "string",
+        "required": false
+      },
+      "cpm": {
+        "type": "string",
+        "required": false
+      }
+  
+    },
+    "validations": [],
+    "relations": {
+    },
+    "acls": [],
+    "methods": []
+  }

@@ -1,0 +1,16 @@
+{
+  "SystemRole": [
+    {
+      "id": "system-admin",
+      "name": "system-admin"
+    },
+    {
+      "id": "system-manager",
+      "name": "system-manager"
+    },
+    {
+      "id": "system-user",
+      "name": "system-user"
+    }
+  ]
+}

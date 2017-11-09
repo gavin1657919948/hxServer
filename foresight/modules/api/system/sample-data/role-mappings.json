@@ -1,0 +1,20 @@
+{
+  "SystemRoleMapping": [
+    {
+      "roleId": "system-admin",
+      "principalId": "admin",
+      "principalType": "USER"
+    },
+    {
+      "roleId": "system-manager",
+      "principalId": "manager",
+      "principalType": "USER"
+    },
+    {
+      "roleId": "system-user",
+      "principalId": "user",
+      "principalType": "USER"
+    }
+  ]
+
+}

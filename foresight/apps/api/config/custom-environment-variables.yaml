@@ -1,0 +1,27 @@
+api:
+  # Do not use trailing spaces for the baseUrl
+  baseUrl: API_BASE_URL
+  host: API_HOST
+  port: API_PORT
+  version: API_VERSION
+
+admin:
+  url: ADMIN_URL
+  recoverPath: ADMIN_RECOVER_PATH
+
+mongodb:
+  url: MONGODB_URL
+
+settings:
+  registrationEnabled: SETTINGS_REGISTRATION_ENABLED
+
+smtp:
+  host: SMTP_HOST
+  port: SMTP_PORT
+
+storage:
+  path: STORAGE_PATH
+
+system:
+  initdb: INITDB
+  migratedb: MIGRATEDB

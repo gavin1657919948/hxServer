@@ -1,0 +1,47 @@
+{
+  "name": "@colmena/module-api-content",
+  "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "author": "Bram Borggreve <bram@colmena.io> (https://github.com/beeman) (https://twitter.com/beeman_nl)",
+  "url": "https://github.com/colmena/colmena",
+  "dependencies": {
+    "faker": "4.1.0"
+  },
+  "colmena": {
+    "module": {
+      "modelSources": [
+        "common/models"
+      ],
+      "models": {
+        "ContentBaseModel": {
+          "dataSource": "db",
+          "public": false
+        },
+        "ContentEvent": {
+          "dataSource": "db"
+        },
+        "ContentPage": {
+          "dataSource": "db"
+        },
+        "ContentProduct": {
+          "dataSource": "db"
+        },
+        "ContentPost": {
+          "dataSource": "db"
+        }
+      },
+      "sampleData": [
+        "sample-data/events.json",
+        "sample-data/pages.json",
+        "sample-data/products.json",
+        "sample-data/posts.json"
+      ],
+      "sampleFiles": [
+        "sample-files/file-list.json"
+      ]
+    }
+  }
+}

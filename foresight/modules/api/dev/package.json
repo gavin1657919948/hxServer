@@ -1,0 +1,25 @@
+{
+  "name": "@colmena/module-api-dev",
+  "version": "0.2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "author": "Bram Borggreve <bram@colmena.io> (https://github.com/beeman) (https://twitter.com/beeman_nl)",
+  "url": "https://github.com/colmena/colmena",
+  "colmena": {
+    "module": {
+      "modelSources": [
+        "common/models"
+      ],
+      "models": {
+        "Dev": {
+          "dataSource": "db"
+        }
+      },
+      "sampleData": [
+        "sample-data/sample-data.json"
+      ]
+    }
+  }
+}

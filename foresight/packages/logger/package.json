@@ -1,0 +1,16 @@
+{
+  "name": "@colmena/logger",
+  "version": "0.1.0",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "author": "Bram Borggreve <bram@colmena.io> (https://github.com/beeman) (https://twitter.com/beeman_nl)",
+  "url": "https://github.com/colmena/colmena",
+  "dependencies": {
+    "bunyan": "1.8.12",
+    "bunyan-format": "0.2.1",
+    "chalk": "2.1.0"
+  }
+}

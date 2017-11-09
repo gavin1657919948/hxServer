@@ -1,0 +1,35 @@
+<table class="{{config.class}}">
+  <thead>
+    <tr>
+      <th *ngFor="let column of config.columns">{{column.label}}</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of items">
+      <td *ngFor="let column of config.columns">
+        <span *ngIf="!column.click && !column.link">
+          {{item[column.field]}}
+        </span>
+        <span *ngIf="column.click">
+          <a href="javascript:void(0)" (click)="column.click(item)">
+            {{item[column.field]}}
+          </a>
+        </span>
+        <span *ngIf="column.link">
+          <a [routerLink]="[column.link, item.id]">
+            {{item[column.field]}}
+          </a>
+        </span>
+      </td>
+      <td>
+        <span *ngFor="let button of config.rowButtons">
+          <button (click)="action.emit({ type: button.typeName, payload: item })" class="{{button.className}}">
+            <i class="{{button.icon}}"></i>
+            {{button.label}}
+          </button>
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>

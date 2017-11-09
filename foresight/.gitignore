@@ -1,0 +1,7 @@
+.idea
+node_modules
+dist
+admin/db.json
+lerna-debug.log
+production.json
+package-lock.json

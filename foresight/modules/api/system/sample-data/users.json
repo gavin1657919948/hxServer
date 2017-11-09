@@ -1,0 +1,28 @@
+{
+  "SystemUser": [
+    {
+      "id": "admin",
+      "email": "admin@example.com",
+      "firstName": "Admin",
+      "lastName": "Colmena",
+      "avatar": "https://avatars3.githubusercontent.com/u/8403845?v=3&s=200",
+      "password": "password"
+    },
+    {
+      "id": "manager",
+      "email": "manager@example.com",
+      "firstName": "Manager",
+      "lastName": "Colmena",
+      "avatar": "https://avatars3.githubusercontent.com/u/8403845?v=3&s=200",
+      "password": "password"
+    },
+    {
+      "id": "user",
+      "email": "user@example.com",
+      "firstName": "User",
+      "lastName": "Colmena",
+      "avatar": "https://avatars3.githubusercontent.com/u/8403845?v=3&s=200",
+      "password": "password"
+    }
+  ]
+}

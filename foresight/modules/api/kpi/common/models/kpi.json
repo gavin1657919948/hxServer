@@ -1,0 +1,14 @@
+{
+  "name": "KPI",
+  "plural": "KPI",
+  "description": "KPI data",
+  "base": "Model",
+  "componentPackage": "@colmena/module-api-kpi/common/models/kpi/",
+  "idInjection": true,
+  "forceId": false,
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

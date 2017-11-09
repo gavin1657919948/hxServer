@@ -1,0 +1,10 @@
+{
+  "name": "System",
+  "plural": "System",
+  "description": "System: Get information from the system",
+  "base": "Model",
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

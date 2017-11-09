@@ -1,0 +1,15 @@
+{
+  "name": "ContentPage",
+  "plural": "ContentPages",
+  "description": "Content: Manage Pages in a Domain",
+  "base": "ContentBaseModel",
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "name": "@colmena/module-api-system",
+  "version": "0.2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "author": "Bram Borggreve <bram@colmena.io> (https://github.com/beeman) (https://twitter.com/beeman_nl)",
+  "url": "https://github.com/colmena/colmena",
+  "dependencies": {
+    "@colmena/api-helpers": "^0.2.0",
+    "@colmena/logger": "0.1.0",
+    "config": "1.26.2",
+    "inflection": "1.12.0",
+    "lodash": "4.17.4"
+  },
+  "colmena": {
+    "module": {
+      "modelSources": [
+        "common/models"
+      ],
+      "mixinSources": [
+        "common/mixins"
+      ],
+      "models": {
+        "System": {
+          "dataSource": false
+        },
+        "SystemAccessToken": {
+          "dataSource": "db",
+          "public": false
+        },
+        "SystemBaseModel": {
+          "dataSource": "db",
+          "public": false
+        },
+        "SystemDomain": {
+          "dataSource": "db"
+        },
+        "SystemRole": {
+          "dataSource": "db",
+          "public": false
+        },
+        "SystemRoleMapping": {
+          "dataSource": "db",
+          "public": false
+        },
+        "SystemSetting": {
+          "dataSource": "db"
+        },
+        "SystemUser": {
+          "dataSource": "db"
+        }
+      },
+      "sampleData": [
+        "sample-data/access-tokens.json",
+        "sample-data/domains.json",
+        "sample-data/role-mappings.json",
+        "sample-data/roles.json",
+        "sample-data/users.json"
+      ]
+    }
+  }
+}
