@@ -9,16 +9,20 @@
   "url": "https://github.com/colmena/colmena",
   "colmena": {
     "module": {
-      "modelSources": [
-        "common/models"
-      ],
+      "modelSources": ["common/models"],
       "models": {
-        "KPI": {
-          "dataSource": "db"
+        "Sensor": {
+          "dataSource": "db",
+          "public": true
+        },
+        "SensorLog": {
+          "dataSource": "db",
+          "public": true
         }
       },
       "sampleData": [
-        "sample-data/sample-data.json"
+        "sample-data/sample-sensor.json",
+        "sample-data/sample-sensorLog.json"
       ]
     }
   }

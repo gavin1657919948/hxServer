@@ -1,0 +1,44 @@
+{
+  "name": "Sensor",
+  "plural": "Sensors",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "forceId": false,
+  "description": "Sensor: Manage sensor",
+  "public": true,
+  "mixins": {
+    "SystemDomain": {
+      "foreignKey": "systemDomainId",
+      "required": false
+    },
+    "SystemUser": {
+      "relation": "hasAndBelongsToMany"
+    },
+    "TimeStamp": {
+      "createdAt": "created",
+      "updatedAt": "modified",
+      "required": false,
+      "validateUpsert": true,
+      "silenceWarnings": false
+    }
+  },
+  "properties": {
+    "model": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "hostId": {
+      "type": "string"
+    }
+  },
+  "relations": {
+    "sensorLogs": {
+      "type": "hasMany",
+      "model": "SensorLog",
+      "foreignKey": ""
+    }
+  },
+  "acls": []
+}

@@ -1,0 +1,36 @@
+{
+  "SensorLog": [
+    {
+      "reportTime": "2018-01-12T02:33:13.144Z",
+      "message": { "temperature": "30degree", "oc": "1mA", "ov": "3v" },
+      "ifBreakdown": false,
+      "ifAlert": false,
+      "arcFault": "",
+      "sensorId": "sensor6"
+    },
+    {
+      "reportTime": "2018-01-12T02:38:13.144Z",
+      "message": { "temperature": "50degree", "oc": "100mA", "ov": "6v" },
+      "ifBreakdown": true,
+      "ifAlert": true,
+      "arcFault": "1002",
+      "sensorId": "sensor6"
+    },
+    {
+      "reportTime": "2018-01-12T02:33:13.144Z",
+      "message": { "temperature": "31degree", "oc": "2mA", "ov": "3v" },
+      "ifBreakdown": false,
+      "ifAlert": false,
+      "arcFault": "",
+      "sensorId": "sensor5"
+    },
+    {
+      "reportTime": "2018-01-12T02:38:13.144Z",
+      "message": { "temperature": "70degree", "oc": "22mA", "ov": "8v" },
+      "ifBreakdown": true,
+      "ifAlert": true,
+      "arcFault": "1002",
+      "sensorId": "sensor5"
+    }
+  ]
+}

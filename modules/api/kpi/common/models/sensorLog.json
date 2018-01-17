@@ -1,0 +1,44 @@
+{
+  "name": "SensorLog",
+  "plural": "SensorLogs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "forceId": false,
+  "description": "SensorLog: Sensor report",
+  "componentPackage": "@colmena/module-api-kpi/common/models/listener/",
+  "public": true,
+  "mixins": {
+    "TimeStamp": {
+      "createdAt": "created",
+      "updatedAt": "modified",
+      "required": false,
+      "validateUpsert": true,
+      "silenceWarnings": false
+    }
+  },
+  "properties": {
+    "reportTime": {
+      "type": "date"
+    },
+    "message": {
+      "type": "json"
+    },
+    "error": {
+      "type": "json"
+    },
+    "alert": {
+      "type": "json"
+    },
+    "arcFault": {
+      "type": "string"
+    }
+  },
+  "relations": {
+    "sensor": {
+      "type": "belongsTo",
+      "model": "Sensor",
+      "foreignKey": ""
+    }
+  },
+  "acls": []
+}
